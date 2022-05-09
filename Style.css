@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+body{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color:  rgba(0, 0, 0, 0.829);
+   
+   
+}
+.container{
+    position: absolute;
+    text-align: center;
+    top: 10%;
+    width: 30%;
+    height: 80vh;
+    background-size: cover;
+    background-image: url("https://cdn.dribbble.com/users/925716/screenshots/3333720/attachments/722376/after_noon.png");
+    border-radius: 20px;
+    z-index: 1;
+    box-shadow: 0px 0px 25px rgb(202,120,14);
+}
+.weather-data{  
+    width: 100%;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+}
+.location{
+    color: white;
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin: 10px 10px;
+    text-align: left;   
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
+}
+input{
+    text-align: center;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.129);
+    padding: 5px;
+    margin-left: 25px;
+}
+button{
+    cursor: pointer;
+    background: transparent;
+    border:none;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    color: white;
+    font-size: 10px;
+}
+button:hover{
+    color:rgba(0, 0, 0, 0.129);
+}
+.img{
+    color: white;
+   font-size: 75px;
+}
+.weather-img{
+    margin: 5px 10px;
+    height: 125px;
+}
+.temperature{
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    margin: 5px 10px;
+}
+.temp{
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 5px;
+    margin-left: -10px;
+}
+.humidty{
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    padding-left: 5px;
+    border-left: 1px solid white;
+}
+.future{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   margin: 0px 10px;
+   height: 200px;
+   border-radius: 20px;
+   line-height: 35px;
+   list-style: none;
+   background-color:rgba(0, 0, 0, 0.1);
+}
+.future ul{
+    text-align: left;
+    margin-top: 30px;
+    list-style: none;
+}
+.future ul li{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: default;
+    text-shadow: 1px 1px rgb(202,120,14);
+}
+.sunset{
+    position: absolute;
+    justify-content: space-between;
+    display: flex;
+    top: 50%;
+}
+.sunset ul{
+    text-align: center;
+    list-style: none;
+   
+}
+.sunset ul li label{
+    cursor: default;
+    
+}
+.wow{
+    font-size: 22px;
+    margin: 5px 30px;
+}
