@@ -10,20 +10,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Oswald:wght@200&family=Water+Brush&display=swap" rel="stylesheet">
 </head>
 <body onload = "geoloc()">
-<div class="container">
+<div class="container" >
     <div class="weather-data">
 
         <div class="location">
             <section class = "input-part">
             <label for=""><i class="fa-solid fa-location-dot"></i></label>
             <label for="" class = "location-label">FortWayne</label>
-            <input type="text" value = "Enter Location" autofocus>
+
+            <div class="text">
+            <input type="text" value = "Enter City" autofocus>
            <button><i class="fa-solid fa-magnifying-glass fa-2x" type = "submit"></i></button>
+           </div>
         </section>
         </div>
 
         <div class="weather-img">
-            <label for="" class = "img"><i class="fa-solid fa-sun"></i></label>
+           <img src="photos/clear.png" alt="Weather icon">
         </div>
         <div class="temperature">
             <label for="" class = "temp"><i class="fa-solid fa-temperature-full"></i><span class = "temper">78</span>°F</label>
@@ -32,8 +35,8 @@
         </div>
         <div class="future">
             <ul class = "sunset">
-                <li><label for="" class = "wow">Sunrise: 5:52am</label></li>
-                <li><label for="" class = "wow">Sunset: 8:25pm</label></li>
+                <li><label for="" class = "wow">Sunrise: <span class = "time">05:00</span>am</label></li>
+                <li><label for="" class = "wow"> Sunset: <span class = time-night>6:00</span>pm</label></li>
             </ul>
 
             <ul class = "param">

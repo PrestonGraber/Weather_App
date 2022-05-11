@@ -7,7 +7,7 @@ body{
     display: flex;
     align-content: center;
     justify-content: center;
-    background-color:  rgba(0, 0, 0, 0.829);
+    background-color: rgba(0, 0, 0, 0.844);
    
    
 }
@@ -15,7 +15,7 @@ body{
     position: absolute;
     text-align: center;
     top: 10%;
-    width: 30%;
+    width: 35%;
     height: 80vh;
     background-size: cover;
     background-image: url("https://cdn.dribbble.com/users/925716/screenshots/3333720/attachments/722376/after_noon.png");
@@ -39,6 +39,15 @@ body{
     padding-bottom: 5px;
     border-bottom: 1px solid white;
 }
+.text{
+    position: absolute;
+    width: 50%;
+    top: 1%;
+    right: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 input{
     text-align: center;
     color: white;
@@ -46,7 +55,7 @@ input{
     border-radius: 20px;
     background: rgba(0, 0, 0, 0.129);
     padding: 5px;
-    margin-left: 25px;
+    
 }
 button{
     cursor: pointer;
@@ -66,8 +75,15 @@ button:hover{
    font-size: 75px;
 }
 .weather-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 5px 10px;
     height: 125px;
+}
+.weather-img img{
+    height: 100px;
+    width: 100px;
 }
 .temperature{
     border-bottom: 1px solid white;
@@ -109,6 +125,7 @@ button:hover{
     font-weight: bold;
     font-size: 20px;
     cursor: default;
+    margin-left: 10px;
     text-shadow: 1px 1px rgb(202,120,14);
 }
 .sunset{
@@ -118,23 +135,57 @@ button:hover{
     top: 50%;
 }
 .sunset ul{
-    text-align: center;
-    list-style: none;
+    text-align: center; 
    
+    list-style: none;
 }
-.sunset ul li label{
+.sunset ul li{
+    white-space: 10px;
+}
+
+.wow ul li label{
     cursor: default;
-    
+  
 }
-.wow{
-    font-size: 22px;
-    margin: 5px 30px;
+@media screen and (min-width: 1300px ) {
+    
+    .weather-img{
+        height: 300px;
+    }
+    .weather-img img{
+        height: 150px;
+        width: 150px;
+    }
+    .temperature{
+      margin-top: -20px;
+    }
+    .sunset{
+        
+        top: 50%;
+    }
+    .sunset label{
+        font-size: 40px;
+        margin: 10px;
+    }
+    .future{
+        height: 400px;
+    }
+    .future ul li{
+        font-size: 35px;
+        margin-top: 10px;
+    }
+    .param ul li{
+        font-size: 30px;
+    }
 }
 @media screen and (min-width: 310px) and (max-width: 620px){
    .container{
        top: 0;
        width: 100%;
        height: 100vh;
+   }
+   input{
+       margin-left: 50px;
    }
    .weather-img{
        display: flex;
@@ -143,17 +194,21 @@ button:hover{
        height: 250px;
    }
    .sunset{
-      top: 55%;
+      top: 50%;
+   }
+   .sunset li{
+       
    }
    .future{
        height: 350px;
    }
    .future,.wow{
        margin: 10px 5px;
-       font-size: 30px;
+       font-size: 20px;
    }
+   
    .future ul li{
-       margin-top: 10px;
+       padding: 5px;
        font-size: 25px;
    }
    
